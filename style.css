@@ -5,7 +5,7 @@
     /* TikTok colorish */
     --accent-color-2: #00f2ea;
     /* TikTok colorish */
-    --glass-bg: rgba(255, 255, 255, 0.75);
+    --glass-bg: rgba(255, 255, 255, 0.5);
     --glass-border: rgba(255, 255, 255, 0.4);
     --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
@@ -134,5 +134,71 @@ header h1 {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        /* Use more screen width */
+        padding: 15px;
+    }
+
+    .card {
+        background: rgba(255, 255, 255, 0.35);
+        /* More transparent on mobile */
+        padding: 30px 20px;
+        /* Reduced padding */
+        border-radius: 16px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        /* Smaller heading */
+        margin-bottom: 8px;
+    }
+
+    .subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 25px;
+        letter-spacing: 1.5px;
+    }
+
+    .links {
+        gap: 12px;
+        /* Tighter spacing */
+    }
+
+    .link-item {
+        padding: 14px;
+        font-size: 1rem;
+    }
+
+    .link-item i {
+        font-size: 1.2rem;
+    }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 480px) {
+    .card {
+        background: rgba(255, 255, 255, 0.3);
+        /* Even more transparent */
+        padding: 25px 18px;
+    }
+
+    header h1 {
+        font-size: 1.75rem;
+    }
+
+    .subtitle {
+        font-size: 0.85rem;
+        margin-bottom: 20px;
+    }
+
+    .link-item {
+        padding: 12px;
+        font-size: 0.95rem;
     }
 }
