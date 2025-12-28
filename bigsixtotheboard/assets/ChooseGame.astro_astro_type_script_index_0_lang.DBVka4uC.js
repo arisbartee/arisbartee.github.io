@@ -1,0 +1,1 @@
+import{B as e}from"./bone-builder.Cy4GEgoj.js";const o=document.getElementById("bone-2-placeholder"),n=document.getElementById("bone-3-placeholder"),t=document.getElementById("bone-4-placeholder");o&&(o.outerHTML=e.createTallDomino(2,0));n&&(n.outerHTML=e.createTallDomino(3,0));t&&(t.outerHTML=e.createTallDomino(4,0));
